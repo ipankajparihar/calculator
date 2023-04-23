@@ -1,0 +1,46 @@
+.body {
+  background-color: gray;
+  margin: 0;
+  padding: 0;
+  min-width: 600px;
+}
+
+.App {
+  height: 620px;
+  width: 500px;
+  margin-left: 40%;
+  margin-top: 5%;
+  background-color: rgb(16, 16, 16);
+  border-radius: 10px;
+}
+.Display {
+  height: 90px;
+  width: 498px;
+  border: solid 1px;
+  font-size: 40px;
+  background-color: aliceblue;
+  border-radius: 5px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Btns {
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: column;
+  height: 100%;
+}
+.Btn {
+  background-color: rgb(68, 187, 187);
+
+  height: 100px;
+  width: 100px;
+  border: 2px solid black;
+  border-radius: 50%;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
