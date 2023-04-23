@@ -6,6 +6,7 @@ import { Component } from "react";
 import update from "react-addons-update";
 import { create, all } from "mathjs";
 
+//puting all math function from mathjs into math variable
 const config = {};
 const math = create(all, config);
 
@@ -15,6 +16,7 @@ class App extends Component {
     this.state = { operations: [] };
   }
 
+  //handle click for every btn and rerender it
   handleClick = (e) => {
     const data = e.target.getAttribute("data-value");
     switch (data) {
@@ -37,6 +39,8 @@ class App extends Component {
         break;
     }
   };
+
+  //calculate string form of operation array through math variable
 
   calculate = () => {
     var answer = this.state.operations.join("");
